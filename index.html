@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="styles.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <header>
+        <nav>
+             <ul>
+                <li>Home</li>
+                <li>Experiencia</li>
+                <li>Habilidades</li>
+                <li>Contacto</li>
+             </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hombre">
+                <img src="./imagenes/hombre.jpg" alt="">
+            </div>
+            <h1>Raul Torrente</h1>
+            <h2>Programador WEB</h2>
+            <h3>Argentina, Santa Fe, Rosario</h3>
+            <h3>raultorrente@hotmail.com</h3>
+            <h3>24 años</h3>    
+            <h3>Soltero</h3>
+        </section>
+        <section id="experiencia">
+            <h2>Mi Experiencia</h2>
+            <div class="lista-proyectos">
+                <div class="detalle-proyectos">
+                    <h3>Proyecto 1</h3>
+                <button id="boton" onclick="mostrar1();">Mostrar imagen</button>
+                <div id="img1">
+                   <button id="boton" onclick="ocultar1();">Ocultar imagen</button>
+                   <img src="./imagenes/proyecto1.jpg" alt="">
+                </div>
+                <script>
+                    function mostrar1() {
+                    document.getElementById('img1').style.display = 'block'
+                }
+                    function ocultar1() {
+                    document.getElementById('img1').style.display = 'none'
+                }
+                </script>
+                    <p>Este proytecto fue realizado para una empresa llamada "DPS" en la cual brinde trabajo por 2 años</p>
+                    <a href="https://google.es">Aqui puede ver mi proyecto</a>
+                </div>
+                <div class="detalle-proyectos">
+                    <h3>Proyecto 2</h3>
+                    <button id="boton" onclick="mostrar2();">Mostrar imagen</button>
+                <div id="img2">
+                   <button id="boton" onclick="ocultar2();">Ocultar imagen</button>
+                   <img src="./imagenes/proyecto2.jpg" alt="">
+                </div>
+                <script>
+                    function mostrar2() {
+                    document.getElementById('img2').style.display = 'block'
+                }
+                    function ocultar2() {
+                    document.getElementById('img2').style.display = 'none'
+                }
+                </script>
+                    <p>Este proytecto fue realizado para una empresa llamada "DABIN S.R.L" en la cual brinde trabajo por 3 años</p>
+                    <a href="https://google.es">Aqui puede ver mi proyecto</a>
+                </div>
+                <div class="detalle-proyectos">
+                    <h3>Proyecto 3</h3>
+                    <button id="boton" onclick="mostrar3();">Mostrar imagen</button>
+                <div id="img3">
+                   <button id="boton" onclick="ocultar3();">Ocultar imagen</button>
+                   <img src="./imagenes/proyecto3.jpg" alt="">
+                </div>
+                <script>
+                    function mostrar3() {
+                    document.getElementById('img3').style.display = 'block'
+                }
+                    function ocultar3() {
+                    document.getElementById('img3').style.display = 'none'
+                }
+                </script>
+                    <p>Este proytecto fue realizado para una empresa llamada "CEDENT" en la cual brinde trabajo por 1 años</p>
+                    <a href="https://google.es">Aqui puede ver mi proyecto</a>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <h3>Soluciones rapidas</h3>
+            <img src="./imagenes/soluciones.jpg" alt="">
+            <h3>Mantenimiento constante de su pagina</h3>
+            <img src="./imagenes/mantenimiento.jpg" alt="">
+            <h3>Seguridad permanente para su pagina</h3>
+            <img src="./imagenes/seguridad.jpg" alt="">
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <form action="" class="formulario" id="form">
+                <label for="" class="formulario_label">Nombre</label>
+                <input type="text" class="formulario_input">
+                <label for="" class="formulario_label">Correo electronico</label>
+                <input type="text" class="formulario_input">
+                <label for="" class="formulario_label">Mensaje</label>
+                <input type="text" class="formulario_input">
+                <button>Enviar</button>
+        </section>
+    </main>
+    
+</body>
+</html>
